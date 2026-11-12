@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>英文構詞學習筆記：詞綴・字根・印歐語根</title>
+<meta name="description" content="英文詞綴、拉丁希臘字根與印歐語根的中文學習筆記，所有例字附美式 IPA 音標。">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="home-page">
+<header class="topbar">
+  <nav class="sitenav"><a href="index.html" class="active" aria-current="page">首頁</a><a href="affixes.html">英文詞綴主題大全</a><a href="roots.html">英文字根大全</a><a href="pie.html">印歐語根與同源字</a></nav>
+</header>
+<main class="home-main">
+  <section class="hero">
+    <h1>英文構詞學習筆記</h1>
+    <p class="lede">把英文單字拆成「詞綴＋字根」，再往上追到印歐語的共同祖先。三份筆記由淺入深，所有例字都附上中文意義與<strong>美式 IPA 音標</strong>。</p>
+  </section>
+
+  <section class="cards">
+    <a class="card" href="affixes.html">
+  <h3>英文詞綴主題大全</h3>
+  <p>依 affixes.org 的 29 個主題整理字首、字尾與組合形式，每個詞綴附常用例字、中文意義、構詞拆解與詞源。</p>
+  <span class="meta">約 6,100 個附音標的單字</span>
+</a><a class="card" href="roots.html">
+  <h3>英文字根大全</h3>
+  <p>約 110 個最常見的拉丁語與希臘語字根，依意義分成 12 類，附例字、拆解與同根字族。</p>
+  <span class="meta">約 1,700 個附音標的單字</span>
+</a><a class="card" href="pie.html">
+  <h3>印歐語根與同源字</h3>
+  <p>從原始印歐語追溯英語本土字、拉丁系與希臘系的同源關係，含格林定律等入門說明。</p>
+  <span class="meta">約 1,700 個附音標的單字</span>
+</a>
+  </section>
+
+  <section class="prose">
+    <h2>建議閱讀順序</h2>
+    <ol>
+      <li><strong>英文詞綴主題大全</strong>：先認識字首、字尾，學會「拆字」。</li>
+      <li><strong>英文字根大全</strong>：掌握拉丁語、希臘語字根，理解單字的意義核心。</li>
+      <li><strong>印歐語根與同源字</strong>：看見 <em>foot</em>、<em>pedal</em>、<em>tripod</em> 為何是同一個字，把零散的字串成家族。</li>
+    </ol>
+
+    <h2>資料來源</h2>
+    <ul>
+      <li><strong>主題分類與詞綴清單</strong>：Michael Quinion 的 <em>Dictionary of Affixes</em>（網站 <a href="https://www.affixes.org/" rel="noopener">affixes.org</a>；原書為牛津大學出版社 2002 年出版的 <em>Ologies and Isms</em>）。本站只沿用其主題架構與詞綴名稱，例字、中文解釋與拆解皆為另行撰寫。</li>
+      <li><strong>印歐語根</strong>：字根寫法與詞源路徑主要參考 Calvert Watkins, <em>The American Heritage Dictionary of Indo-European Roots</em>（第三版），並以 <a href="https://www.etymonline.com/" rel="noopener">Etymonline</a> 與 <a href="https://en.wiktionary.org/" rel="noopener">Wiktionary</a> 交叉查證。書中或學界仍有爭議的說法，頁面上標註「一說」。</li>
+      <li><strong>音標</strong>：以 <a href="https://github.com/cmusphinx/cmudict" rel="noopener">CMU Pronouncing Dictionary</a>（美式發音）自動轉換為 IPA，字典未收的字以 <a href="https://github.com/espeak-ng/espeak-ng" rel="noopener">eSpeak NG</a> 產生，再人工修正複合字、名詞／動詞重音差異與字首讀音。</li>
+      <li><strong>詞頻</strong>：補充中高級單字時，以 <a href="https://github.com/rspeer/wordfreq" rel="noopener">wordfreq</a> 的英語詞頻排名挑選常用但不冷僻的字。</li>
+    </ul>
+
+    <h2>製作方式</h2>
+    <p>內容由 Claude（Anthropic 的 AI 助理）依照使用者的需求逐步整理撰寫，流程如下：</p>
+    <ol>
+      <li>依 affixes.org 的主題建立架構，為每個詞綴挑選 7–15 個常用例字，寫出中文意義、構詞拆解與一兩句詞源說明。</li>
+      <li>以詞頻表篩選候選字，人工剔除「長得像但不同源」的字（例如 <em>database</em> 與字尾 <em>-ase</em> 無關）。</li>
+      <li>用程式為所有例字加上美式 IPA 音標，並檢查重音、音節與表格格式。</li>
+      <li>以 Python-Markdown 把 Markdown 原稿轉成網頁，自動產生左側目錄。原稿保留在 <code>md/</code> 資料夾。</li>
+    </ol>
+    <p class="note">AI 整理的內容難免有疏漏，尤其是詞源。若發現錯誤，歡迎到 GitHub 開 issue 指正；重要的詞源請以上列字典為準。</p>
+  </section>
+</main>
+<footer class="foot home-foot">英文構詞學習筆記 · 原稿見 <code>md/</code> 資料夾</footer>
+</body>
+</html>
